@@ -1,0 +1,28 @@
+.page {
+  padding: 0 40px;
+  margin: 0 auto;
+  max-width: 1380px;
+  min-width: 420px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: $breakpoint-desktop) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .page {
+    padding: 0;
+  }
+
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
